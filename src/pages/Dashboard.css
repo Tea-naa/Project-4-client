@@ -1,0 +1,168 @@
+/* Dashboard Container */
+.dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    position: relative; /* Ensure it holds absolutely positioned elements */
+    border: 2px solid #ff0000;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dashboard:hover {
+    transform: translateY(-8px);
+    box-shadow: 8px 8px 30px rgba(255, 0, 0, 0.8);
+}
+
+/* Welcome Message */
+.dashboard h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Logout Button */
+.logout-button {
+    position: absolute; 
+    top: 20px;
+    right: 20px; 
+    background: linear-gradient(90deg, #ff0000, #ff4500);
+    color: #0a0a0a;
+    border-radius: 6px;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 16px; 
+    transition: all 0.3s ease;
+    z-index: 10; /* Higher than other elements in the dashboard */
+}
+
+.logout-button:hover {
+    background: transparent;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ff4500, 0 0 20px #ff0000;
+    transform: scale(1.05);
+}
+
+/* Category Buttons */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-button {
+    background-color: transparent;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.category-button:hover {
+    color: #ffffff;
+    box-shadow: 0 0 10px #ff4500, 0 0 20px #ff0000;
+    transform: scale(1.05);
+}
+
+/* Questions Section */
+.questions-section {
+    background-color: #292929;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.questions-section h3 {
+    color: #ff4500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Question Item */
+.question-item {
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question-item:hover {
+    background-color: #383838;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-header p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Question Answer */
+.question-answer {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.question-answer p {
+    margin: 5px 0;
+}
+
+.question-answer button {
+    background-color: transparent;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.question-answer button:hover {
+    color: #ffffff;
+    box-shadow: 0 0 10px #ff4500, 0 0 20px #ff0000;
+    transform: scale(1.05);
+}
+
+/* Add Question Button */
+.add-button {
+    background-color: transparent;
+    color: #ffffff; 
+    border-color: #ff4500;
+    border-radius: 20px; 
+    padding: 8px 16px; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: block;
+    box-shadow: 10px 10px 10px rgba(255, 69, 0, 0.3); 
+}
+
+.add-button:hover {
+    background-color: #ff6a00; 
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 106, 0, 0.6); 
+    transform: scale(1.08); /* hover effect */
+}

@@ -1,0 +1,186 @@
+/* .shadows-into-light-two-regular {
+    font-family: "Shadows Into Light Two", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('./background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    color: #ffffff; 
+    padding-bottom: 100px;
+}
+.app-header h3 {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+    font-family: 'Incubus', sans-serif;
+}
+/* Caution Tape */
+.caution-tape {
+    position: absolute;
+    top: 10%; 
+    left: 50%; 
+    width: 101%; 
+    height: 50px; 
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 0, 0.3), 
+        rgba(255, 255, 0, 0.3) 10px,
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3) 20px
+    );
+    z-index: 1; 
+    transform: translateX(-50%) rotate(-10deg); 
+    transform-origin: center; 
+}
+
+/* Auth Screen */
+.auth-screen {
+    background-color: rgba(30, 30, 30, 0.8); 
+    border-radius: 12px; 
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.9); 
+    padding: 40px;
+    width: 400px; 
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid #ff0000; 
+    position: relative; 
+    z-index: 2; 
+}
+
+.auth-screen:hover {
+    transform: translateY(-8px); 
+    box-shadow: 8px 8px 30px rgba(255, 0, 0, 0.8); 
+}
+
+/* Auth Screen Headings */
+.auth-screen h1 {
+    font-size: 28px; 
+    color: #ff0000; 
+    margin-bottom: 20px;
+    font-weight: bold; 
+    letter-spacing: 2px; 
+}
+
+.auth-screen h2 {
+    font-size: 22px;
+    color: #ff4500; 
+    margin-bottom: 15px;
+}
+
+/* Form Fields */
+.auth-screen input[type="text"],
+.auth-screen input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ff0000;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background-color: #282828; 
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.auth-screen input[type="text"]:focus,
+.auth-screen input[type="password"]:focus {
+    border-color: #ff4500; 
+    outline: none;
+}
+
+/* Error Messages */
+.error {
+    color: #ff1744; 
+    margin-top: -8px;
+    margin-bottom: 12px;
+}
+
+/* Buttons */
+.auth-screen button {
+    background-color: transparent; 
+    color: #ff0000; 
+    border: 2px solid #ff0000; 
+    border-radius: 6px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    width: auto; 
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease; 
+}
+
+.auth-screen button:hover {
+    background-color: transparent; 
+    color: #ffffff; 
+    box-shadow: 0 0 10px #ff4500, 0 0 20px #ff0000; 
+    transform: scale(1.05); 
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 25px;
+}
+
+.register-link a {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff0000, #ff4500); 
+    color: #0a0a0a;
+    padding: 10px 25px; 
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.register-link a:hover {
+    background: transparent; 
+    color: #ffffff; 
+    box-shadow: 0 0 10px #ff4500, 0 0 20px #ff0000; 
+    transform: scale(1.05); 
+}
+/* Styles for the terms and conditions checkbox */
+.auth-screen .terms-container {
+    display: flex; 
+    align-items: center; 
+    margin-top: 15px; 
+}
+
+.auth-screen input[type="checkbox"] {
+    margin-bottom: 20px;
+    margin-right: 10px; 
+    transform: scale(1.2); 
+}
+
+/* Style for the label */
+.auth-screen label {
+    font-size: 14px; 
+    color: white;
+    cursor: pointer; 
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+}
+
+.footer p {
+    color: #ff4500; 
+    font-size: 14px;
+    text-align: center; 
+}
